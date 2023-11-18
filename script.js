@@ -62,6 +62,7 @@ for(let i of products.data) {
     // img tag
     let image = document. createElement("img");
     image.setAttribute("src", `images/${i.image}`);
+    image.setAttribute("alt", `${i.productName}`);
     imgContainer.appendChild(image);
     card.appendChild(imgContainer);
     // container
